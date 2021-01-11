@@ -1,0 +1,78 @@
+    .product {
+        margin-top: 1.5rem;
+        &-name {
+            position: relative;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            @include respond(phone) {
+                margin-left: -2.5rem;
+            }
+            &__text {
+                &--1 {
+                    font-weight: bold;
+                    @include respond(phone) {
+                        font-size: 1.5rem;
+                    }
+                }
+                &--2 {
+                    font-size: 1.2rem;
+                    @include respond(phone) {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+        &__row {
+            border-top: 1px solid $color-grey;
+            padding-top: 1.5rem;
+            margin-top: 2rem;
+            @include respond(phone) {
+                margin-top: 1rem;
+                margin-left: -3rem !important;
+            }
+            &-screen {
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+                @include respond(phone) {
+                    margin-left: -1.2rem !important;
+                }
+            }
+        }
+        &-option {
+            position: relative;
+            border-right: 3px solid $color-grey;
+            padding: 3.5rem 0 1.5rem 1.5rem;
+            @include respond(phone) {
+                padding-left: 0;
+            }
+            &__price {
+                &--name {
+                    @include respond(phone) {
+                        font-size: 1rem;
+                    }
+                }
+            }
+            &-group {
+                list-style: none;
+                &__link {
+                    padding-left: 2rem;
+                    text-decoration: none !important;
+                    font-size: 1.2rem;
+                    @include respond(phone) {
+                        font-size: .8rem;
+                        padding-left: 0rem;
+                    }
+                    &--price {
+                        color: $color-black;
+                        &:hover {
+                            color: $color-primary;
+                        }
+                    }
+                    &--start {
+                        color: orange !important;
+                        transition: all 0.5s;
+                    }
+                }
+            }
+        }
+    }

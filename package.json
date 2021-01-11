@@ -1,0 +1,14 @@
+{
+    "name": "ht-electronis",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "sasstocss": "node-sass Public/sass/main.scss Public/css/style.css -w"
+    },
+    "author": "Thien",
+    "license": "ISC",
+    "devDependencies": {
+        "node-sass": "^5.0.0"
+    }
+}

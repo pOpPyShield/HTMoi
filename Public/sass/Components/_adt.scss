@@ -1,0 +1,84 @@
+.adt {
+    height: 40rem;
+    bottom: 0px;
+    top: 0px;
+    position: fixed;
+    background-size: cover;
+    background-attachment: scroll;
+    border-radius: 12px;
+    margin: auto 0px;
+    z-index: 5;
+    transition: all .5s;
+    box-shadow: .5rem 1rem 2rem rgba($color-black, 0.2);
+    @include respond(phone) {
+        position: absolute;
+    }
+    &-left {
+        width: 14rem;
+        left: .5rem;
+        right: auto;
+        padding: 1.5rem;
+        background-color: $color-white;
+        border: 1px solid $color-white;
+        &__name {
+            margin-bottom: 1rem;
+            color: $color-primarily-dark;
+            border-bottom: 1px solid $color-black;
+        }
+        &-title {
+            list-style: none;
+            color: $color-primarily-dark;
+        }
+        &__link {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            color: $color-black;
+            &:hover {
+                color: $color-primarily-dark;
+                text-shadow: .5rem 1rem 2rem rgba($color-black, 0.2);
+            }
+        }
+    }
+    &-right {
+        width: 13rem;
+        right: 11px;
+        left: auto;
+        background-image: url(../img/adt_tet.png);
+        @include respond (phone) {
+            visibility: hidden;
+        }
+    }
+    &-img {
+        bottom: 0px;
+        top: 7rem;
+        position: fixed;
+        height: 18rem;
+        width: 13rem;
+        transition: all .5s;
+        z-index: 10;
+        @include respond (phone) {
+            visibility: hidden;
+        }
+        &-left {
+            right: .9rem;
+            left: auto;
+            background-image: url(../img/Gau-noel.png);
+            background-size: cover;
+            animation: animationtest 5s linear infinite alternate;
+        }
+    }
+    &-navbar {
+        bottom: 0px;
+        top: 7rem;
+        left: 2rem;
+        position: fixed;
+        transition: all .5s;
+        z-index: 10;
+        &__icon {
+            color: $color-black;
+            background-color: $color-white;
+            padding: 1rem;
+            border-radius: 1rem;
+        }
+    }
+}

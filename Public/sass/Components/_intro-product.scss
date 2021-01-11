@@ -1,0 +1,11 @@
+.product-box {
+    width: 100%;
+    background-color: $color-white;
+    padding: 2.5rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    border-radius: .5rem;
+    @include respond (phone) {
+        padding: 1.5rem;
+    }
+    @include respond(tab-port) {}
+}

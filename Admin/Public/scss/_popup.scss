@@ -1,0 +1,24 @@
+.modal {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__contents {
+        background-color: #fff;
+        padding: 2rem 4rem;
+        button {
+            width: 100%;
+            padding: .5rem;
+            border: none;
+            color: #fff;
+            transition: all .3 ease;
+            cursor: pointer;
+            &:hover {
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <!--Bootstrap4-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!--Bootstrap4-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js "></script>
+    <link rel="shortcut icon" type="image/png" href="img/shortcut.png">
+    <title>HT-Electronics</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="header__logo-box">
+            <img src="img/new.png" alt="Logo" class="header__logo">
+        </div>
+        <ul class="header-content u-center-text">
+            <li class="header-content__group"><a href="index.html" class="header-content__link header-content__link--home">Trang chủ</a></li>
+            <li class="header-content__group"><a href="#" class="header-content__link">Sản phẩm</a></li>
+            <li class="header-content__group"><a href="#popup-log" class="header-content__link header-content__link--login">Đăng nhập</a></li>
+            <li class="header-content__group header-content-cart">
+                <a href="#" class="header-content__link"><i class="fas fa-shopping-cart header-content__link--cart"></i>giỏ hàng</a>
+            </li>
+            <li class="header-content__group">
+                <div class="header-search">
+                    <div class="header-search__item">
+                        <input type="search" class="header-search__item--input" placeholder="Tìm kiếm ...">
+                    </div>
+                    <div class="header-search__item">
+                        <i class="fas fa-search  header-search__item--icon"></i>
+                    </div>
+            </li>
+        </ul>
+    </header>
+    <div class="popup" id="popup-log">
+        <div class="popup__content">
+            <a href="index.html" class="popup__close">&times;</a>
+            <div class="popup-logo">
+                <img src="img/new.png" class="popup-logo__img" alt="logo" />
+            </div>
+            <div class="popup-login">
+                <h3 class="popup-login__name u-center-text">Đăng nhập</h3>
+                <div class="popup-group">
+                    <input type="text" class="popup__input" name="" id="" placeholder="Tên đăng nhập">
+                    <label for="name" class="popup__label">Tên đăng nhập</label>
+                </div>
+                <div class="popup-group">
+                    <input type="text" class="popup__input" name="" id="" placeholder="Mật khẩu">
+                    <label for="name" class="popup__label">Mật khẩu</label>
+                </div>
+                <a href="#" class="btn btn--blue">Đăng nhập</a>
+                <div class="popup-login__reg u-margin-bottom-big">
+                    <p><i>Nếu chưa có tài khoản đăng ký <a class="popup-login__reg--here" href="#popup-reg">Tại đây</a></i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="popup-reg">
+        <div class="popup__content">
+            <a href="#section-courses" class="popup__close">&times;</a>
+            <div class="popup-logo">
+                <img src="img/new.png" class="popup-logo__img" alt="logo" />
+            </div>
+            <div class="popup-login">
+                <h3 class="popup-login__name u-center-text">Đăng ký</h3>
+                <div class="popup-group">
+                    <input type="text" class="popup__input" name="" id="" placeholder="Tên đăng nhập">
+                    <label for="name" class="popup__label">Tên đăng nhập</label>
+                </div>
+                <div class="popup-group">
+                    <input type="text" class="popup__input" name="" id="" placeholder="Email">
+                    <label for="name" class="popup__label">Email</label>
+                </div>
+                <div class="popup-group">
+                    <input type="text" class="popup__input" name="" id="" placeholder="Mật khẩu">
+                    <label for="name" class="popup__label">Mật khẩu</label>
+                </div>
+                <div class="popup-group">
+                    <input type="text" class="popup__input" name="" id="" placeholder="Nhập lại mật khẩu">
+                    <label for="name" class="popup__label">Nhập lại mật khẩu</label>
+                </div>
+                <a href="#" class="btn btn--blue">Đăng ký</a>
+                <p><i>Bạn đã có tài khoản? <a class="popup-login__reg--here" href="#popup-log">Đăng nhập</a></i></p>
+                <div class="popup-login__reg u-margin-bottom-big">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="adt adt-left">
+        <div class="adt-left__name">
+            <h3 class="font-default u-center-text adt-left-title">Sản phẩm</h3>
+        </div>
+        <h3 class="font-p adt-left-title">Laptop</h3>
+        <ul class="adt-left-title">
+            <li class="adt-left__group"><a href="#" class="adt-left__link">Dell</a></li>
+            <li class="adt-left__group"><a href="#" class="adt-left__link">Asus</a></li>
+            <li class="adt-left__group"><a href="#" class="adt-left__link">Lenovo</a></li>
+            <li class="adt-left__group"><a href="#" class="adt-left__link">Macbook</a></li>
+        </ul>
+        <h3 class="font-p adt-left-title">pc-gaming</h3>
+        <ul class="adt-left-title">
+            <li class="adt-left__group"><a href="#" class="adt-left__link">PC-Dell</a></li>
+            <li class="adt-left__group"><a href="#" class="adt-left__link">PC-Asus</a></li>
+            <li class="adt-left__group"><a href="#" class="adt-left__link">PC-Lenovo</a></li>
+            <li class="adt-left__group"><a href="#" class="adt-left__link">PC-Macbook</a></li>
+        </ul>
+        <h3 class="font-p adt-left-title">Linh kiện</h3>
+        <ul class="adt-left-title">
+            <li class="adt-left__group"><a href="#" class="adt-left__link">Ram</a></li>
+            <li class="adt-left__group"><a href="#" class="adt-left__link">Rom</a></li>
+            <li class="adt-left__group"><a href="#" class="adt-left__link">Đế tỏa nhiệt</a></li>
+            <li class="adt-left__group"><a href="#" class="adt-left__link">Bô mạch</a></li>
+        </ul>
+    </div>
+    <div class="adt-img adt-img-left">
+    </div>
+    <div class="adt adt-right ">
+    </div>
+    </div>
+    <section class="laptop-dell">
+        <div class="container">
+            <h3 class="">Dell</h3>
+            <div class="box-product">
+                <div class="box-product__img">
+                    <a href="#"><img src="img/product-dell-1.jpg" class="d-block w-100" alt="dell-1"></a>
+                </div>
+                <div class="box-product__detail">
+                    <a href="#" class="box-product__detail--name">Dell Inspiron 17 3793 2020 Premium 17.3” FHD Laptop Notebook Computer, 10th Gen 4-Core Intel Core i5-1035G1 1.0 GHz, 16GB RAM</a>
+                    <div class="box-product__detail--start">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <del class="font-box-product-old">18,000,000₫</del>
+                    <div class="box-product__detail--price-new">12.000.000₫</div>
+                </div>
+            </div>
+            <div class="box-product">
+                <div class="box-product__img">
+                    <a href="#"><img src="img/product-dell-1.jpg" class="d-block w-100" alt="dell-1"></a>
+                </div>
+                <div class="box-product__detail">
+                    <a href="#" class="box-product__detail--name">Dell Inspiron 17 3793 2020 Premium 17.3” FHD Laptop Notebook Computer, 10th Gen 4-Core Intel Core i5-1035G1 1.0 GHz, 16GB RAM</a>
+                    <div class="box-product__detail--start">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <del class="font-box-product-old">18,000,000₫</del>
+                    <div class="box-product__detail--price-new">12.000.000₫</div>
+                </div>
+            </div>
+            <div class="box-product">
+                <div class="box-product__img">
+                    <a href="#"><img src="img/product-dell-1.jpg" class="d-block w-100" alt="dell-1"></a>
+                </div>
+                <div class="box-product__detail">
+                    <a href="#" class="box-product__detail--name">Dell Inspiron 17 3793 2020 Premium 17.3” FHD Laptop Notebook Computer, 10th Gen 4-Core Intel Core i5-1035G1 1.0 GHz, 16GB RAM</a>
+                    <div class="box-product__detail--start">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <del class="font-box-product-old">18,000,000₫</del>
+                    <div class="box-product__detail--price-new">12.000.000₫</div>
+                </div>
+            </div>
+            <div class="box-product">
+                <div class="box-product__img">
+                    <a href="#"><img src="img/product-dell-1.jpg" class="d-block w-100" alt="dell-1"></a>
+                </div>
+                <div class="box-product__detail">
+                    <a href="#" class="box-product__detail--name">Dell Inspiron 17 3793 2020 Premium 17.3” FHD Laptop Notebook Computer, 10th Gen 4-Core Intel Core i5-1035G1 1.0 GHz, 16GB RAM</a>
+                    <div class="box-product__detail--start">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <del class="font-box-product-old">18,000,000₫</del>
+                    <div class="box-product__detail--price-new">12.000.000₫</div>
+                </div>
+            </div>
+            <div class="box-product">
+                <div class="box-product__img">
+                    <a href="#"><img src="img/product-dell-1.jpg" class="d-block w-100" alt="dell-1"></a>
+                </div>
+                <div class="box-product__detail">
+                    <a href="#" class="box-product__detail--name">Dell Inspiron 17 3793 2020 Premium 17.3” FHD Laptop Notebook Computer, 10th Gen 4-Core Intel Core i5-1035G1 1.0 GHz, 16GB RAM</a>
+                    <div class="box-product__detail--start">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <del class="font-box-product-old">18,000,000₫</del>
+                    <div class="box-product__detail--price-new">12.000.000₫</div>
+                </div>
+            </div>
+            <div class="box-product">
+                <div class="box-product__img">
+                    <a href="#"><img src="img/product-dell-1.jpg" class="d-block w-100" alt="dell-1"></a>
+                </div>
+                <div class="box-product__detail">
+                    <a href="#" class="box-product__detail--name">Dell Inspiron 17 3793 2020 Premium 17.3” FHD Laptop Notebook Computer, 10th Gen 4-Core Intel Core i5-1035G1 1.0 GHz, 16GB RAM</a>
+                    <div class="box-product__detail--start">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <del class="font-box-product-old">18,000,000₫</del>
+                    <div class="box-product__detail--price-new">12.000.000₫</div>
+                </div>
+            </div>
+            <div class="box-product">
+                <div class="box-product__img">
+                    <a href="#"><img src="img/product-dell-1.jpg" class="d-block w-100" alt="dell-1"></a>
+                </div>
+                <div class="box-product__detail">
+                    <a href="#" class="box-product__detail--name">Dell Inspiron 17 3793 2020 Premium 17.3” FHD Laptop Notebook Computer, 10th Gen 4-Core Intel Core i5-1035G1 1.0 GHz, 16GB RAM</a>
+                    <div class="box-product__detail--start">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <del class="font-box-product-old">18,000,000₫</del>
+                    <div class="box-product__detail--price-new">12.000.000₫</div>
+                </div>
+            </div>
+            <div class="pagination">
+                <ul class="pagination-numbers">
+                    <li class="pagination-numbers__group"><a href="laptop-dell.html" class="pagination-numbers__link">1</a></li>
+                    <li class="pagination-numbers__group"><a href="laptop-dell-2.html" class="pagination-numbers__link  pagination-numbers__current">2</a></li>
+                    <li class="pagination-numbers__group"><a href="laptop-dell-3.html" class="pagination-numbers__link">3</a></li>
+                    <li class="pagination-numbers__group"><a href="laptop-dell-4.html" class="pagination-numbers__link">4</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="footer__logo-box">
+            <img src="img/Logo.png" class="footer__logo">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="footer__content">
+                        <h3 class="heading-tertiary ">
+                            Liên hệ với chúng tôi
+                        </h3>
+                    </div>
+                    <div class="footer__navigation">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link"><i class="fas fa-phone-alt footer__link-icon"></i>0941979240</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link"><i class="fas fa-phone-alt footer__link-icon"></i>0905713423</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link"><i class="fas fa-envelope footer__link-icon"></i>bqhuy.19it4@vku.udn.vn</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link"><i class="fas fa-envelope footer__link-icon"></i>cmthien.19it4@vku.udn.vn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="group u-center-text">
+                        <div class="group__navigation">
+                            <ul class="group__list">
+                                <li class="group__item">
+                                    <a href="#"><img src="img/fb.png" class="group__link" alt="a"></a>
+                                </li>
+                                <li class="group__item">
+                                    <a href="#"><img src="img/ytb.png" class="group__link" alt="a"></a>
+                                </li>
+                                <li class="group__item">
+                                    <a href="#"><img src="img/isg.png" class="group__link" alt="a"></a>
+                                </li>
+                                <li class="group__item">
+                                    <a href="#"><img src="img/twt.png" class="group__link" alt="a"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="footer__copyright">
+            HT-Electronics&copy;2020
+        </p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2;
+}
+
+.product-new-name {
+    position: relative;
+    text-align: center;
+    top: 2px;
+    padding-top: 1px;
+    margin-bottom: 14px;
+    line-height: 0;
+    ;
+    &__text {
+        position: relative;
+        font-size: 3rem;
+        text-transform: uppercase;
+        letter-spacing: .5rem;
+        z-index: 2;
+        background-color: $color-grey;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 900;
+        padding: .5rem 1rem;
+        display: inline-block;
+    }
+    &::after {
+        content: "";
+        width: 100%;
+        background-color: transparent;
+        display: block;
+        height: 1px;
+        border-top: 1px solid $color-black;
+        position: absolute;
+        top: 50%;
+        margin-top: -1px;
+    }
+}
+
+.font-default {
+    font-size: 1.4rem;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: $color-black;
+    @include respond (phone) {
+        font-size: .8rem;
+    }
+}
+
+.font-p {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: $color-black;
+}
+
+.font-box-product-old {
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: $color-black;
+    @include respond (phone) {
+        font-size: .5rem;
+    }
+}

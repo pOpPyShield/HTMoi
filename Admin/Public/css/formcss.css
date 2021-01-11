@@ -1,0 +1,12 @@
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    cursor: pointer;
+}
+
+.form-popup {}

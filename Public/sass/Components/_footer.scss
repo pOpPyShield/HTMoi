@@ -1,0 +1,99 @@
+.footer {
+    font-size: 1.4rem;
+    background-color: $color-footer;
+    padding: 5rem 0;
+    color: $color-grey-light;
+    margin-top: 5rem;
+    @include respond (tab-port) {
+        text-align: center;
+    }
+    &__content {
+        padding-top: 2rem;
+    }
+    &__logo-box {
+        text-align: center;
+    }
+    &__logo {
+        width: 25rem;
+        height: auto;
+        transition: all .2s;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+    &__title {
+        display: block;
+    }
+    &__copyright {
+        border-top: 1px solid $color-grey-light;
+        padding-top: 1rem;
+        transform: translateX(50%);
+        width: 50%;
+        text-align: center;
+    }
+    &__navigation {
+        padding: 2rem;
+        display: inline-block;
+    }
+    &__list {
+        border-top: 1px solid $color-grey-light;
+        list-style: none;
+    }
+    &__item {
+        display: inline-block;
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+    &__link {
+        &:link,
+        &:visited {
+            color: $color-grey-light;
+            background-color: $color-footer;
+            text-decoration: none;
+            display: block;
+            border-radius: 5rem;
+            transition: all .2s;
+            margin: 2rem 1rem 0 0;
+        }
+        &:hover,
+        &:active {
+            color: $color-primary;
+            box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+            transform: rotate(5deg) scale(1.05);
+        }
+        &-icon {
+            padding-right: 1rem;
+        }
+    }
+}
+
+.group {
+    width: 100%;
+    padding-top: 3rem;
+    &__link {
+        width: 3rem;
+        list-style: none;
+        transition: all .5s;
+        &:hover {
+            transform: scale(2);
+            box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+        }
+    }
+    &__item {
+        display: inline-block;
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+    &__navigation {
+        margin-top: 1rem;
+        border-top: 1px solid $color-grey-light;
+        padding: 2rem;
+        display: inline-block;
+        float: right;
+        @include respond(tab-port) {
+            float: none;
+        }
+    }
+}

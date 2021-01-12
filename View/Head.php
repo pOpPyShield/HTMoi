@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Public/css/style.css">
-    <script src="/HT-Electronics/Public/js/zoom__img.js"></script>
+    <script src="/HTTzz/Public/js/zoom__img.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script type="text/javascript" src="/HT-Electronics/Public/js/index.js"></script>
+    <script type="text/javascript" src="/HTTzz/Public/js/index.js"></script>
     <!--Bootstrap4-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">

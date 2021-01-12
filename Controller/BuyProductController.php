@@ -51,7 +51,7 @@
                         $_SESSION['cart'] = array_values($_SESSION['cart']);
                         echo "<script>
                             alert('Item removed');
-                            window.location.href='/HT-Electronics/?Action=GioHang';
+                            window.location.href='/HTTzz/?Action=GioHang';
                         </script>";
                     } 
                 }
@@ -63,7 +63,7 @@
             if(isset($Post)) {
                 $SessionDelivery->SetSession("Delivery_type", $type_delivery);
                 echo "<script>
-                    window.location.href='/HT-Electronics/?Action=CheckOut';
+                    window.location.href='/HTTzz/?Action=CheckOut';
                 
                 </script>";
             }

@@ -14,10 +14,10 @@
                                     <a href="#" class="box__add-to-card--text">Thêm vào giỏ hàng</a>
                                 </div>
                                 <div class="box__new-png">
-                                    <img class="box__new-png--img" src="/HTMoi/Public/img/NEW (1).png" alt="new.png">
+                                    <img class="box__new-png--img" src="/HTTzz/Public/img/NEW (1).png" alt="new.png">
                                 </div>
                                 <div class="box__img">
-                                    <a href="#"><img src="/HTMoi/Public/img/ram.jpg" class="d-block w-100" alt="new-product-1"></a>
+                                    <a href="#"><img src="/HTTzz/Public/img/ram.jpg" class="d-block w-100" alt="new-product-1"></a>
                                 </div>
                                 <div class="box__detail">
                                     <div class="box__detail--name">
@@ -40,10 +40,10 @@
                                     <a href="#" class="box__add-to-card--text">Thêm vào giỏ hàng</a>
                                 </div>
                                 <div class="box__new-png">
-                                    <img class="box__new-png--img" src="/HTMoi/Public/img/NEW (1).png" alt="new.png">
+                                    <img class="box__new-png--img" src="/HTTzz/Public/img/NEW (1).png" alt="new.png">
                                 </div>
                                 <div class="box__img">
-                                    <a href="#"><img src="/HTMoi/Public/img/new-product-1.jpg" class="d-block w-100" alt="new-product-1"></a>
+                                    <a href="#"><img src="/HTTzz/Public/img/new-product-1.jpg" class="d-block w-100" alt="new-product-1"></a>
                                 </div>
                                 <div class="box__detail">
                                     <div class="box__detail--name">
@@ -66,10 +66,10 @@
                                     <a href="#" class="box__add-to-card--text">Thêm vào giỏ hàng</a>
                                 </div>
                                 <div class="box__new-png">
-                                    <img class="box__new-png--img" src="/HTMoi/Public/img/NEW (1).png" alt="new.png">
+                                    <img class="box__new-png--img" src="/HTTzz/Public/img/NEW (1).png" alt="new.png">
                                 </div>
                                 <div class="box__img">
-                                    <a href="#"><img src="/HTMoi/Public/img/new-product-1.jpg" class="d-block w-100" alt="new-product-1"></a>
+                                    <a href="#"><img src="/HTTzz/Public/img/new-product-1.jpg" class="d-block w-100" alt="new-product-1"></a>
                                 </div>
                                 <div class="box__detail">
                                     <div class="box__detail--name">
@@ -92,10 +92,10 @@
                                     <a href="#" class="box__add-to-card--text">Thêm vào giỏ hàng</a>
                                 </div>
                                 <div class="box__new-png">
-                                    <img class="box__new-png--img" src="/HTMoi/Public/img/NEW (1).png" alt="new.png">
+                                    <img class="box__new-png--img" src="/HTTzz/Public/img/NEW (1).png" alt="new.png">
                                 </div>
                                 <div class="box__img">
-                                    <a href="#"><img src="/HTMoi/Public/img/new-product-1.jpg" class="d-block w-100" alt="new-product-1"></a>
+                                    <a href="#"><img src="/HTTzz/Public/img/new-product-1.jpg" class="d-block w-100" alt="new-product-1"></a>
                                 </div>
                                 <div class="box__detail">
                                     <div class="box__detail--name">
@@ -122,10 +122,10 @@
                                     <a href="#" class="box__add-to-card--text">Thêm vào giỏ hàng</a>
                                 </div>
                                 <div class="box__new-png">
-                                    <img class="box__new-png--img" src="/HTMoi/Public/img/NEW (1).png" alt="new.png">
+                                    <img class="box__new-png--img" src="/HTTzz/Public/img/NEW (1).png" alt="new.png">
                                 </div>
                                 <div class="box__img">
-                                    <a href="#"><img src="/HTMoi/Public/img/new-product-1.jpg" class="d-block w-100" alt="new-product-1"></a>
+                                    <a href="#"><img src="/HTTzz/Public/img/new-product-1.jpg" class="d-block w-100" alt="new-product-1"></a>
                                 </div>
                                 <div class="box__detail">
                                     <div class="box__detail--name">
@@ -148,10 +148,10 @@
                                     <a href="#" class="box__add-to-card--text">Thêm vào giỏ hàng</a>
                                 </div>
                                 <div class="box__new-png">
-                                    <img class="box__new-png--img" src="/HTMoi/Public/img/NEW (1).png" alt="new.png">
+                                    <img class="box__new-png--img" src="/HTTzz/Public/img/NEW (1).png" alt="new.png">
                                 </div>
                                 <div class="box__img">
-                                    <a href="#"><img src="/HTMoi/Public/img/new-product-1.jpg" class="d-block w-100" alt="new-product-1"></a>
+                                    <a href="#"><img src="/HTTzz/Public/img/new-product-1.jpg" class="d-block w-100" alt="new-product-1"></a>
                                 </div>
                                 <div class="box__detail">
                                     <div class="box__detail--name">
@@ -174,10 +174,10 @@
                                     <a href="#" class="box__add-to-card--text">Thêm vào giỏ hàng</a>
                                 </div>
                                 <div class="box__new-png">
-                                    <img class="box__new-png--img" src="/HTMoi/Public/img/NEW (1).png" alt="new.png">
+                                    <img class="box__new-png--img" src="/HTTzz/Public/img/NEW (1).png" alt="new.png">
                                 </div>
                                 <div class="box__img">
-                                    <a href="#"><img src="/HTMoi/Public/img/new-product-1.jpg" class="d-block w-100" alt="new-product-1"></a>
+                                    <a href="#"><img src="/HTTzz/Public/img/new-product-1.jpg" class="d-block w-100" alt="new-product-1"></a>
                                 </div>
                                 <div class="box__detail">
                                     <div class="box__detail--name">
@@ -200,10 +200,10 @@
                                     <a href="#" class="box__add-to-card--text">Thêm vào giỏ hàng</a>
                                 </div>
                                 <div class="box__new-png">
-                                    <img class="box__new-png--img" src="/HTMoi/Public/img/NEW (1).png" alt="new.png">
+                                    <img class="box__new-png--img" src="/HTTzz/Public/img/NEW (1).png" alt="new.png">
                                 </div>
                                 <div class="box__img">
-                                    <a href="#"><img src="/HTMoi/Public/img/new-product-1.jpg" class="d-block w-100" alt="new-product-1"></a>
+                                    <a href="#"><img src="/HTTzz/Public/img/new-product-1.jpg" class="d-block w-100" alt="new-product-1"></a>
                                 </div>
                                 <div class="box__detail">
                                     <div class="box__detail--name">
@@ -230,10 +230,10 @@
                                     <a href="#" class="box__add-to-card--text">Thêm vào giỏ hàng</a>
                                 </div>
                                 <div class="box__new-png">
-                                    <img class="box__new-png--img" src="/HTMoi/Public/img/NEW (1).png" alt="new.png">
+                                    <img class="box__new-png--img" src="/HTTzz/Public/img/NEW (1).png" alt="new.png">
                                 </div>
                                 <div class="box__img">
-                                    <a href="#"><img src="/HTMoi/Public/img/new-product-1.jpg" class="d-block h-75 w-100" alt="new-product-1"></a>
+                                    <a href="#"><img src="/HTTzz/Public/img/new-product-1.jpg" class="d-block h-75 w-100" alt="new-product-1"></a>
                                 </div>
                                 <div class="box__detail">
                                     <div class="box__detail--name">
@@ -256,10 +256,10 @@
                                     <a href="#" class="box__add-to-card--text">Thêm vào giỏ hàng</a>
                                 </div>
                                 <div class="box__new-png">
-                                    <img class="box__new-png--img" src="/HTMoi/Public/img/NEW (1).png" alt="new.png">
+                                    <img class="box__new-png--img" src="/HTTzz/Public/img/NEW (1).png" alt="new.png">
                                 </div>
                                 <div class="box__img">
-                                    <a href="#"><img src="/HTMoi/Public/img/new-product-1.jpg" class="d-block w-100" alt="new-product-1"></a>
+                                    <a href="#"><img src="/HTTzz/Public/img/new-product-1.jpg" class="d-block w-100" alt="new-product-1"></a>
                                 </div>
                                 <div class="box__detail">
                                     <div class="box__detail--name">
@@ -282,10 +282,10 @@
                                     <a href="#" class="box__add-to-card--text">Thêm vào giỏ hàng</a>
                                 </div>
                                 <div class="box__new-png">
-                                    <img class="box__new-png--img" src="/HTMoi/Public/img/NEW (1).png" alt="new.png">
+                                    <img class="box__new-png--img" src="/HTTzz/Public/img/NEW (1).png" alt="new.png">
                                 </div>
                                 <div class="box__img">
-                                    <a href="#"><img src="/HTMoi/Public/img/new-product-1.jpg" class="d-block w-100" alt="new-product-1"></a>
+                                    <a href="#"><img src="/HTTzz/Public/img/new-product-1.jpg" class="d-block w-100" alt="new-product-1"></a>
                                 </div>
                                 <div class="box__detail">
                                     <div class="box__detail--name">
@@ -308,10 +308,10 @@
                                     <a href="#" class="box__add-to-card--text">Thêm vào giỏ hàng</a>
                                 </div>
                                 <div class="box__new-png">
-                                    <img class="box__new-png--img" src="/HTMoi/Public/img/NEW (1).png" alt="new.png">
+                                    <img class="box__new-png--img" src="/HTTzz/Public/img/NEW (1).png" alt="new.png">
                                 </div>
                                 <div class="box__img">
-                                    <a href="#"><img src="/HTMoi/Public/img/new-product-1.jpg" class="d-block w-100" alt="new-product-1"></a>
+                                    <a href="#"><img src="/HTTzz/Public/img/new-product-1.jpg" class="d-block w-100" alt="new-product-1"></a>
                                 </div>
                                 <div class="box__detail">
                                     <div class="box__detail--name">

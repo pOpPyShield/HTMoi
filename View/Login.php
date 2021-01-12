@@ -1,7 +1,7 @@
 <?php include_once 'Head.php';?>
     <div class="container">
         <div class="logo">
-            <a href="?Action=Home"><img src="Public/img/new.png" alt="Logo" class="logo__form"></a>
+            <a href="?Action=Home"><img src="/HTTzz/Public/img/new.png" alt="Logo" class="logo__form"></a>
         </div>
         <form class="form" method="POST" action="?Action=logUserIn">
             <h3 class="form__name">Đăng nhập</h3>

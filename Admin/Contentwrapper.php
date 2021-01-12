@@ -67,7 +67,7 @@
                         <?php echo "<span class='mr-2 d-none d-lg-inline text-gray-600 small'>" . $_SESSION['UserName'] . "</span>"; ?>
                         <?php 
                             
-                                echo '<img class="img-profile rounded-circle" src="/HT-Electronics/Public/ImageUser/profileDefaultImg.jpg">';
+                                echo '<img class="img-profile rounded-circle" src="/HTMoi/Public/ImageUser/profileDefaultImg.jpg">';
                         ?>
                 <?php } ?>
               </a>
@@ -226,7 +226,7 @@
                 </div>
                 <div class="card-body">
                   <div class="text-center">
-                    <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;" src="/Admin/Public/img/undraw_posting_photo.svg" alt="">
+                    <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;" src="/HTMoi/Admin/Public/img/undraw_posting_photo.svg" alt="">
                   </div>
                   <p>Add some quality, svg illustrations to your project courtesy of <a target="_blank" rel="nofollow" href="https://undraw.co/">unDraw</a>, a constantly updated collection of beautiful svg images that you can use completely free and without attribution!</p>
                   <a target="_blank" rel="nofollow" href="https://undraw.co/">Browse Illustrations on unDraw &rarr;</a>

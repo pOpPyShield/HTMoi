@@ -4,7 +4,7 @@
 <?php }?>
     <div class="container">
         <div class="logo">
-            <a href="#"><img src="/HTTzz/Public/img/new.png" alt="Logo" class="logo__form"></a>
+            <a href="#"><img src="/HTMoi/Public/img/new.png" alt="Logo" class="logo__form"></a>
         </div>
         <form class="form" method="POST" action="?Action=regUserIn">
             <h3 class="form__name">Đăng ký</h3>

@@ -157,6 +157,6 @@
         </div>
     </div>
 </section>
-<script src="/HT-Electronics/Public/js/slide-left.js"></script>
+<script src="/HTMoi/Public/js/slide-left.js"></script>
 <?php include_once 'Footer.php'; ?>
 <?php include_once 'EndHead.php'; ?>

@@ -20,7 +20,7 @@
         $Mail->SMTPAuth = true;
         $Mail->Host = 'smtp.gmail.com';
         $Mail->Username = 'bqhuy.19it4@vku.udn.vn';
-        $Mail->Password = 'God26112001';
+        $Mail->Password = '';
         $Mail->SMTPSecure = 'tls';
         $Mail->Port = 25;
         $Mail->isHTML(true);

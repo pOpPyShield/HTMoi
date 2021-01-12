@@ -59,7 +59,7 @@
                                         foreach ($ImageSPCT as $ImageSPCTs) {
                                             if ($ImageSPCTs['SPCT_Id'] == $DisplaySPCTs['SPCT_Id']) {
                                 ?>
-                                                <img style="width: 150px;" src="/HT-Electronics/Public/ImageSPCT/<?php echo $ImageSPCTs['Full']; ?>" alt="SPCT IMG">
+                                                <img style="width: 150px;" src="/HTMoi/Public/ImageSPCT/<?php echo $ImageSPCTs['Full']; ?>" alt="SPCT IMG">
                                 <?php       } 
                                         } //End for each $ImageSPCT
                                 ?>

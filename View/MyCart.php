@@ -17,9 +17,9 @@
                 include_once './Model/KhachHang.php';
                 $ImgCheckObj = new KhachHang();
                 if ($ImgCheckObj->CheckImg($_SESSION['KhachHang_Id']) == true) {
-                    echo '<img class="header-content__link--img header-content__group-user" src="/HTTzz/Public/ImageUser/profile' . $ImgCheckObj->getUsrID() . $ImgCheckObj->getImgName() . '.' . $ImgCheckObj->getImgType() . '">';
+                    echo '<img class="header-content__link--img header-content__group-user" src="/HTMoi/Public/ImageUser/profile' . $ImgCheckObj->getUsrID() . $ImgCheckObj->getImgName() . '.' . $ImgCheckObj->getImgType() . '">';
                 } else {
-                    echo '<img class="header-content__link--img header-content__group-user" src="/HTTzz/Public/ImageUser/profile' . $ImgCheckObj->getImgName() . '.' . $ImgCheckObj->getImgType() . '">';
+                    echo '<img class="header-content__link--img header-content__group-user" src="/HTMoi/Public/ImageUser/profile' . $ImgCheckObj->getImgName() . '.' . $ImgCheckObj->getImgType() . '">';
                 }
                 ?>
                 <?php echo '<h1 class="header-content__link--username header-content__group-user">' . $_SESSION['UserName'] . '</h1>'; ?>

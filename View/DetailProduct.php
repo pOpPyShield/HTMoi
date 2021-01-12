@@ -58,7 +58,7 @@
                         <div class="detail__img-big">
                             <?php $Image = $NoiDungSP->HienThiHinhAnhSPCT($SPCT_Id);
                             ?>
-                            <img src="/HTTzz/Public/ImageSPCT/<?php echo $Image['Full'];?>" class="d-block w-100" alt="" id="ProductImg">
+                            <img src="/HTMoi/Public/ImageSPCT/<?php echo $Image['Full'];?>" class="d-block w-100" alt="" id="ProductImg">
                         </div>
                         <div class="detail__img-small">
                             <ul class="detail-list">

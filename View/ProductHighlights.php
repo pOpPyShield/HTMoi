@@ -29,7 +29,7 @@ for ($i = 0; $i < count($StoreSPRating); $i++) {
                             <a href="?Action=ChiTietSanPham&Id=<?php echo $QuerySPCT['SPCT_Id']; ?>" class="box__add-to-card--text">Thêm vào giỏ hàng</a>
                         </div>
                         <div class="box__img">
-                            <a href="?Action=ChiTietSanPham&Id=<?php echo $QuerySPCT['SPCT_Id']; ?>"><img src="/HTTzz/Public/ImageSPCT/<?php echo $QueryHinh['Full']; ?>" class="d-block w-100" alt="new-product-1"></a>
+                            <a href="?Action=ChiTietSanPham&Id=<?php echo $QuerySPCT['SPCT_Id']; ?>"><img src="/HMoi/Public/ImageSPCT/<?php echo $QueryHinh['Full']; ?>" class="d-block w-100" alt="new-product-1"></a>
                         </div>
                         <div class="box__detail">
                             <div class="box__detail--name">

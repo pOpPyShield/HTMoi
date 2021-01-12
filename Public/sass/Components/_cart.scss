@@ -1,1 +1,31 @@
-//
+.cart {
+    &-input {
+        display: block;
+        width: 10%;
+        height: 2rem;
+        &__text {
+            padding-top: 1rem;
+            font-size: 1.2rem;
+            padding-left: 1rem;
+        }
+    }
+    &-note {
+        position: relative;
+        width: 35rem;
+        left: 50%;
+        &__img {
+            padding: 0 0 2rem 5rem;
+        }
+        &__text {
+            font-size: 1.5rem;
+            padding-left: 25%;
+            text-decoration: none!important;
+            & i {
+                padding-right: .5rem;
+            }
+            &:hover {
+                color: $color-red;
+            }
+        }
+    }
+}

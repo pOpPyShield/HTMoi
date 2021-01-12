@@ -1,10 +1,10 @@
-<?php include_once 'Head.php';?>
-<?php include_once 'Header.php';?>
+<?php include_once 'Head.php'; ?>
+<?php include_once 'Header.php'; ?>
 
 <div id="content">
-        <a onClick="openSlideMenu()">
-            <i class="fas fa-bars detail-openMenu"></i>
-        </a>
+    <a onClick="openSlideMenu()">
+        <i class="fas fa-bars detail-openMenu"></i>
+    </a>
 </div>
 <div class="category-product" id="menu">
     <a class="category-product__close" onClick="closeSlideMenu()">
@@ -46,11 +46,11 @@
                 <div class="product-option__price">
                     <h4 class="product-option__price--name">Chọn mức giá</h4>
                     <ul class="product-option-list">
-                      <li class="product-option-group"><a class="product-option-group__link product-option-group__link--price" href="?Action=SearchMucGia&QR=15">Dưới 15 triệu</a></li>
-                      <li class="product-option-group"><a class="product-option-group__link product-option-group__link--price" href="?Action=SearchMucGia&QR=15-20">15 - 20 triệu</a></li>
-                      <li class="product-option-group"><a class="product-option-group__link product-option-group__link--price" href="?Action=SearchMucGia&QR=20-25">20 - 25 triệu</a></li>  
-                      <li class="product-option-group"><a class="product-option-group__link product-option-group__link--price" href="?Action=SearchMucGia&QR=25-30">25 - 30 triệu</a></li>  
-                      <li class="product-option-group"><a class="product-option-group__link product-option-group__link--price" href="?Action=SearchMucGia&QR=30">Trên 30 triệu</a></li>  
+                        <li class="product-option-group"><a class="product-option-group__link product-option-group__link--price" href="?Action=SearchMucGia&QR=15">Dưới 15 triệu</a></li>
+                        <li class="product-option-group"><a class="product-option-group__link product-option-group__link--price" href="?Action=SearchMucGia&QR=15-20">15 - 20 triệu</a></li>
+                        <li class="product-option-group"><a class="product-option-group__link product-option-group__link--price" href="?Action=SearchMucGia&QR=20-25">20 - 25 triệu</a></li>
+                        <li class="product-option-group"><a class="product-option-group__link product-option-group__link--price" href="?Action=SearchMucGia&QR=25-30">25 - 30 triệu</a></li>
+                        <li class="product-option-group"><a class="product-option-group__link product-option-group__link--price" href="?Action=SearchMucGia&QR=30">Trên 30 triệu</a></li>
                     </ul>
                 </div>
                 <div class="product-option__start">
@@ -62,28 +62,28 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="far fa-star"></i>
-                        </a></li>
+                            </a></li>
                         <li class="product-option-group"><a href="?Action=ChonDanhGia&DanhGia=50" class="product-option-group__link product-option-group__link--start">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="far fa-star"></i>
                                 <i class="far fa-star"></i>
-                        </a></li>
+                            </a></li>
                         <li class="product-option-group"><a href="?Action=ChonDanhGia&DanhGia=25" class="product-option-group__link product-option-group__link--start">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="far fa-star"></i>
                                 <i class="far fa-star"></i>
                                 <i class="far fa-star"></i>
-                        </a></li>  
+                            </a></li>
                         <li class="product-option-group"><a href="?Action=ChonDanhGia&DanhGia=0" class="product-option-group__link product-option-group__link--start">
                                 <i class="fas fa-star"></i>
                                 <i class="far fa-star"></i>
                                 <i class="far fa-star"></i>
                                 <i class="far fa-star"></i>
                                 <i class="far fa-star"></i>
-                        </a></li>  
+                            </a></li>
                     </ul>
                 </div>
             </div>
@@ -96,70 +96,67 @@
             <div class="row product__row">
                 <!-----1----->
                 <?php include_once './Model/QuerySP.php';
-                      include_once './Model/NoiDungChiTietSP.php';
-                      $QueryProductPage = new QuerySP();
-                      $Rate = new NoiDungChiTiet();
-                      $ValueStore = $QueryProductPage->layRaSanPhamRanDom();
-                      for($i = 0; $i<count($ValueStore); $i++) {
-                        $TongSoSao = $Rate->tinhTongSoSaoCuaSanPham($ValueStore[$i]['SPCT_Id'])[0];
-                        $SoNguoiRate = $Rate->demSoCotCuaSPCT($ValueStore[$i]['SPCT_Id'])[0];
-                        $HinhAnh = $QueryProductPage->layRaHinHAnhSPCT($ValueStore[$i]['SPCT_Id']);
+                include_once './Model/NoiDungChiTietSP.php';
+                $QueryProductPage = new QuerySP();
+                $Rate = new NoiDungChiTiet();
+                $ValueStore = $QueryProductPage->layRaSanPhamRanDom();
+                for ($i = 0; $i < count($ValueStore); $i++) {
+                    $TongSoSao = $Rate->tinhTongSoSaoCuaSanPham($ValueStore[$i]['SPCT_Id'])[0];
+                    $SoNguoiRate = $Rate->demSoCotCuaSPCT($ValueStore[$i]['SPCT_Id'])[0];
+                    $HinhAnh = $QueryProductPage->layRaHinHAnhSPCT($ValueStore[$i]['SPCT_Id']);
                 ?>
-                        <div class="col-4">
-                            <div class="box__img">
-                                <a href="?Action=ChiTietSanPham&Id=<?php echo $ValueStore[$i]['SPCT_Id'];?>"><img src="/HT-Electronics/Public/ImageSPCT/<?php echo $HinhAnh['Full'];?>" class="d-block h-75 w-75" alt="new-product-1"></a>
-                            </div>
-                            <div class="box__detail">
-                                <div class="box__detail--name">
-                                    <a href="?Action=ChiTietSanPham&Id=<?php echo $ValueStore[$i]['SPCT_Id'];?>" class="font-default"><?php echo $ValueStore[$i]['TenSPCT'];?></a>
-                                </div>
-                                <div class="box__detail--start">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                    <i class="far fa-star"></i>
-                                    <?php if($SoNguoiRate == 0) {
-                                            $Final = "Chua co so sao";    
-                                    ?>
-                                            <p>So rate: <?php echo $Final;?></p>
-                                    <?php } else {
-                                                $Score1 = $TongSoSao / $SoNguoiRate;
-                                                $Final = $Score1 / 20;
-                                    ?>
-                                                <p>So rate:<?php echo $SoNguoiRate;?>+</p>
-                                                <p>So sao: <?php echo $Final;?></p>
-                                    <?php } ?>
-                                </div>
-                                <?php 
-                                    $KhuyenMai = $QueryProductPage->checkKhuyenMai($ValueStore[$i]['SPCT_Id']);
-                                    $SoKhuyenMai = $QueryProductPage->checkKieuKhuyenMai($KhuyenMai['KhuyenMai_Id']);
-                                    $PhanTramKhuyenMai1 = $SoKhuyenMai['PhanTramKhuyenMai'] / 100;
-                                    
-                                    $DonGiaMoi1 = $ValueStore[$i]['DonGia'] * $PhanTramKhuyenMai1;
-                                    if(empty($KhuyenMai)) {
-                                ?>
-                                        <div class="box__detail--price"><?php echo number_format($ValueStore[$i]['DonGia']);?></div>
-                                <?php 
-                                    } else {
-                                ?>
-                                        <div class="box__detail--price"><?php echo number_format($DonGiaMoi1);?></div>
-                                <?php 
-                                    }
-                                ?>
-                            </div>
+                    <div class="col-4">
+                        <div class="box__img">
+                            <a href="?Action=ChiTietSanPham&Id=<?php echo $ValueStore[$i]['SPCT_Id']; ?>"><img src="/HTMoi/Public/ImageSPCT/<?php echo $HinhAnh['Full']; ?>" class="d-block h-75 w-75" alt="new-product-1"></a>
                         </div>
-                        <!-----1----->
-                <?php 
-                      }
-                
+                        <div class="box__detail">
+                            <div class="box__detail--name">
+                                <a href="?Action=ChiTietSanPham&Id=<?php echo $ValueStore[$i]['SPCT_Id']; ?>" class="font-default"><?php echo $ValueStore[$i]['TenSPCT']; ?></a>
+                            </div>
+                            <div class="box__detail--start">
+                                <?php if ($SoNguoiRate == 0) {
+                                    $Final = "Chưa có đánh giá";
+                                ?>
+                                    <p><?php echo $Final; ?></p>
+                                <?php } else {
+                                    $Score1 = $TongSoSao / $SoNguoiRate;
+                                    $Final = $Score1 / 20;
+                                ?>
+                            
+                                    <p class="box__detail--start--rating"><i class="fas fa-star"></i>+<?php echo $Final; ?></p>
+                                    <p class="box__detail--start--rating">|| <?php echo $SoNguoiRate; ?> người</p>
+
+                                <?php } ?>
+                            </div>
+                            <?php
+                            $KhuyenMai = $QueryProductPage->checkKhuyenMai($ValueStore[$i]['SPCT_Id']);
+                            $SoKhuyenMai = $QueryProductPage->checkKieuKhuyenMai($KhuyenMai['KhuyenMai_Id']);
+                            $PhanTramKhuyenMai1 = $SoKhuyenMai['PhanTramKhuyenMai'] / 100;
+
+                            $DonGiaMoi1 = $ValueStore[$i]['DonGia'] * $PhanTramKhuyenMai1;
+                            if (empty($KhuyenMai)) {
+                            ?>
+                                <div class="box__detail--price"><?php echo number_format($ValueStore[$i]['DonGia']); ?>đ</div>
+                            <?php
+                            } else {
+                            ?>
+                                <div class="box__detail--price"><?php echo number_format($DonGiaMoi1); ?>đ</div>
+                            <?php
+                            }
+                            ?>
+                        </div>
+                    </div>
+                    <!-----1----->
+                <?php
+                }
+
                 ?>
-                
-                
+
+
             </div>
         </div>
     </div>
 </section>
 <script src="/HT-Electronics/Public/js/slide-left.js"></script>
-<?php include_once 'Footer.php';?>
-<?php include_once 'EndHead.php';?>
+<?php include_once 'Footer.php'; ?>
+<?php include_once 'EndHead.php'; ?>

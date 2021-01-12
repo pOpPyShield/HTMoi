@@ -97,7 +97,7 @@
     </div>
 
     <div class="col-lg-3">
-        <div class="border bg-light rounded p-4">
+        <div class="rounded p-4">
             <?php if ($total != 0) { ?>
                 <h4>Tổng: </h4>
                 <h5 class="text-right">

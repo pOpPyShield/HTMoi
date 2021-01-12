@@ -475,7 +475,8 @@ body {
       background-color: rgba(90, 115, 252, 0.8);
       border-radius: 1rem;
       box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.4);
-      transition: all .2s; }
+      transition: all .2s;
+      z-index: 10000000000000000; }
       .box__add-to-card--text:hover {
         color: #fff;
         top: 23%; }
@@ -679,7 +680,7 @@ body {
       box-shadow: 0 0.8rem 3rem rgba(0, 0, 0, 0.15);
       border-bottom: 3px solid #2534f7; }
       .form__input:focus:invalid {
-        border: 3px solid #2534f7; }
+        border: 1px solid #2534f7; }
   .form__input:placeholder-shown ~ label {
     opacity: 0;
     visibility: visible;
@@ -992,3 +993,59 @@ body {
         .product-option-group__link--start {
           color: orange !important;
           transition: all 0.5s; }
+
+.checkout {
+  position: relative;
+  margin: 2rem;
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.3); }
+  .checkout__btn {
+    font-size: 1.5rem;
+    border: none !important;
+    width: 40%;
+    padding: .5rem;
+    background-color: #5a73fc;
+    border-radius: 1rem;
+    transition: all .2s; }
+    .checkout__btn:hover {
+      box-shadow: 0 0.8rem 3rem rgba(0, 0, 0, 0.15);
+      transform: translateY(-3px); }
+    .checkout__btn:active {
+      transform: translateY(1px);
+      border: none !important; }
+  .checkout__cart {
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    padding-left: 2rem; }
+    .checkout__cart--product {
+      font-size: 1.6rem;
+      font-weight: 500; }
+  .checkout__label {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top: 1rem; }
+    .checkout__label i {
+      padding-right: .5rem; }
+  .checkout__title {
+    padding-bottom: 1.5rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    margin: 2rem; }
+  .checkout__name {
+    margin-bottom: 1.5rem; }
+  .checkout__input {
+    display: block;
+    font-family: inherit;
+    padding: 1rem 2rem;
+    color: inherit;
+    border-radius: .2rem;
+    display: block;
+    border-radius: .5rem;
+    border: 1px solid #000;
+    background-color: #fff;
+    width: 100%; }
+    .checkout__input:focus {
+      outline: none;
+      box-shadow: 0 0.8rem 3rem rgba(0, 0, 0, 0.15);
+      border-bottom: 3px solid #2534f7; }
+      .checkout__input:focus:invalid {
+        border: 1px solid #2534f7; }

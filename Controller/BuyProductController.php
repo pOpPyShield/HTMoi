@@ -11,7 +11,7 @@
             if(isset($Post)) {
                 if(!isset($_SESSION['UserName'])) {
                     echo "<script>alert('Login first');
-                            window.location.href='/HT-Electronics/?Action=Login';
+                            window.location.href='/HTMoi/?Action=Login';
                         
                         </script>";
                 } else {
@@ -21,20 +21,20 @@
                         $myitems = array_column($_SESSION['cart'], 'ten_sp');
                         if(in_array($_POST['ten_sp'], $myitems)) {
                             echo "<script>alert('The item already have in cart');
-                                window.location.href='/HT-Electronics/';
+                                window.location.href='/HTMoi/';
                         
                             </script>";
                         
                         } else {
                             $count = count($_SESSION['cart']);
                             $_SESSION['cart'][$count] = array('id_sp' => $id_sp, 'gia' => $gia, 'ten_sp' => $ten_sp, 'quantity_SP' => $quantity);
-                            echo "<script>window.location.href='/HT-Electronics/'</script>";
+                            echo "<script>window.location.href='/HTMoi/'</script>";
                         }
                     
                     } else 
                     {
                         $_SESSION['cart'][0] = array('id_sp' => $id_sp, 'gia' => $gia, 'ten_sp' => $ten_sp, 'quantity_SP' => $quantity);
-                        echo "<script>window.location.href='/HT-Electronics/'</script>";
+                        echo "<script>window.location.href='/HTMoi/'</script>";
                     }
                 }
                 
@@ -51,7 +51,7 @@
                         $_SESSION['cart'] = array_values($_SESSION['cart']);
                         echo "<script>
                             alert('Item removed');
-                            window.location.href='/HTTzz/?Action=GioHang';
+                            window.location.href='/HTMoi/?Action=GioHang';
                         </script>";
                     } 
                 }
@@ -63,7 +63,7 @@
             if(isset($Post)) {
                 $SessionDelivery->SetSession("Delivery_type", $type_delivery);
                 echo "<script>
-                    window.location.href='/HTTzz/?Action=CheckOut';
+                    window.location.href='/HTMoi/?Action=CheckOut';
                 
                 </script>";
             }

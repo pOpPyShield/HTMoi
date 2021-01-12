@@ -29,7 +29,7 @@
             box-shadow: 0 .8rem 3rem rgba($color-black, .15);
             border-bottom: 3px solid $color-primarily-dark;
             &:invalid {
-                border: 3px solid $color-primarily-dark;
+                border: 1px solid $color-primarily-dark;
             }
         }
     }

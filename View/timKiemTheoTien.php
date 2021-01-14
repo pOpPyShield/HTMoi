@@ -1,23 +1,30 @@
 <?php 
     include_once './Model/QuerySP.php';
     $QueryQR = new QuerySP();
-    $DanhGia = $_GET['DanhGia'];
-    switch($DanhGia) {
-        case "0":
-            $limit = 25;
-            $StoreSoSao = $QueryQR->layTheoSoSao($DanhGia, $limit);
+    $MucTien = $_GET['QR'];
+    switch($MucTien) {
+        case "Duoi15":
+            $limit = 15000000;
+            $StoreValue = $QueryQR->layTheoTien1Para($limit, "<");
             break;
-        case "25": 
-            $limit = 50;
-            $StoreSoSao = $QueryQR->layTheoSoSao($DanhGia, $limit);
+        case "Tu15Den20": 
+            $limit = 15000000;
+            $upper = 20000000;
+            $StoreValue = $QueryQR->layTheoTien2Para($limit,$upper);
             break;
-        case "50": 
-            $limit = 75;
-            $StoreSoSao = $QueryQR->layTheoSoSao($DanhGia, $limit);
+        case "Tu20Den25": 
+            $limit = 20000000;
+            $upper = 25000000;
+            $StoreValue = $QueryQR->layTheoTien2Para($limit,$upper);
             break;
-        case "75": 
-            $limit = 100;
-            $StoreSoSao = $QueryQR->layTheoSoSao($DanhGia, $limit);
+        case "Tu25Den30": 
+            $limit = 25000000;
+            $upper = 30000000;
+            $StoreValue = $QueryQR->layTheoTien2Para($limit,$upper);
+            break;
+        case "Tren30": 
+            $limit = 30000000;
+            $StoreValue = $QueryQR->layTheoTien1Para($limit, ">");
             break;
         default: 
             break;
@@ -127,20 +134,22 @@
                       include_once './Model/NoiDungChiTietSP.php';
                       $QueryProductPage = new QuerySP();
                       $Rate = new NoiDungChiTiet();
-                    if(!empty($StoreSoSao)) {
-                      for($i = 0; $i<count($StoreSoSao); $i++) {
-                        $TongSoSao = $Rate->tinhTongSoSaoCuaSanPham($StoreSoSao[$i]['SPCT_Id'])[0];
-                        $SoNguoiRate = $Rate->demSoCotCuaSPCT($StoreSoSao[$i]['SPCT_Id'])[0];
-                        $HinhAnh = $QueryProductPage->layRaHinHAnhSPCT($StoreSoSao[$i]['SPCT_Id']);
-                        $layRaThongTinSPCT = $QueryProductPage->layRaThongTinSPCT($StoreSoSao[$i]['SPCT_Id']);
+                      
+                    if(!empty($StoreValue)) {
+                        echo"<h2>Tim duoc ". count($StoreValue) . " San pham.</h2>";
+                      for($i = 0; $i<count($StoreValue); $i++) {
+                        $TongSoSao = $Rate->tinhTongSoSaoCuaSanPham($StoreValue[$i]['SPCT_Id'])[0];
+                        $SoNguoiRate = $Rate->demSoCotCuaSPCT($StoreValue[$i]['SPCT_Id'])[0];
+                        $HinhAnh = $QueryProductPage->layRaHinHAnhSPCT($StoreValue[$i]['SPCT_Id']);
+                        $layRaThongTinSPCT = $QueryProductPage->layRaThongTinSPCT($StoreValue[$i]['SPCT_Id']);
                 ?>
                         <div class="col-4">
                             <div class="box__img">
-                                <a href="?Action=ChiTietSanPham&Id=<?php echo $StoreSoSao[$i]['SPCT_Id'];?>"><img src="/HT-Electronics/Public/ImageSPCT/<?php echo $HinhAnh['Full'];?>" class="d-block h-75 w-75" alt="new-product-1"></a>
+                                <a href="?Action=ChiTietSanPham&Id=<?php echo $StoreValue[$i]['SPCT_Id'];?>"><img src="/HT-Electronics/Public/ImageSPCT/<?php echo $HinhAnh['Full'];?>" class="d-block h-75 w-75" alt="new-product-1"></a>
                             </div>
                             <div class="box__detail">
                                 <div class="box__detail--name">
-                                    <a href="?Action=ChiTietSanPham&Id=<?php echo $StoreSoSao[$i]['SPCT_Id'];?>" class="font-default"><?php echo $layRaThongTinSPCT['TenSPCT'];?></a>
+                                    <a href="?Action=ChiTietSanPham&Id=<?php echo $StoreValue[$i]['SPCT_Id'];?>" class="font-default"><?php echo $layRaThongTinSPCT['TenSPCT'];?></a>
                                 </div>
                                 <div class="box__detail--start">
                                     <i class="fas fa-star"></i>
@@ -161,7 +170,8 @@
                                     <?php } ?>
                                 </div>
                                 <?php 
-                                    $KhuyenMai = $QueryProductPage->checkKhuyenMai($StoreSoSao[$i]['SPCT_Id']);
+                                    
+                                    $KhuyenMai = $QueryProductPage->checkKhuyenMai($StoreValue[$i]['SPCT_Id']);
                                     $SoKhuyenMai = $QueryProductPage->checkKieuKhuyenMai($KhuyenMai['KhuyenMai_Id']);
                                     $PhanTramKhuyenMai1 = $SoKhuyenMai['PhanTramKhuyenMai'] / 100;
                                     

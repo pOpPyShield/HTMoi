@@ -313,9 +313,16 @@
             $xoaComment->closeCursor();
             return $xoaComment;
         }
-        //Chua Thanh cong
+        //Tim Kiem san pham
         public function timKiemSanPham($TenSP) {
-            $TimKiemSanPham = $this->_pdo->prepare("SELECT * FROM sanphamchitietcuahang WHERE TenSPCT like ? OR ");
+            $TimKiemSanPham = $this->_pdo->prepare("SELECT * FROM sanphamchitietcuahang WHERE TenSPCT like :tenspct ");
+            $newWorld ="%" . $TenSP . "%";
+            $TimKiemSanPham->bindParam(':tenspct', $newWorld, PDO::PARAM_STR);
+            $TimKiemSanPham->execute();
+            $ValueStore = $TimKiemSanPham->fetchAll();
+            $TimKiemSanPham->closeCursor();
+            return $ValueStore;
         }
+    
     }
 ?>

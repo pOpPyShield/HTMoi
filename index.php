@@ -406,13 +406,16 @@
         case "XemXoaDanhGia":
             include_once './Admin/BinhLuanDanhGia/XemDanhGia.php'; 
             break;
-        case "TimKiemSanPham": 
-            $Submit = $_POST['searchProduct'];
-            $NameFind = $_POST['SearchSanPham'];
+        case "TimKiemSanPham":
+            include_once './View/ResultFind.php'; 
+            break; 
+            
+        case "SearchMucGia": 
+            include_once './View/timKiemTheoTien.php';
             break;
-        case "productPage": 
-            include_once './View/product.php';
-            break;
+        //case "productPage": 
+            //include_once './View/product.php';
+            //break;
         case "ChonDanhGia":
             include_once './View/timKiemMucGia.php';
             break;

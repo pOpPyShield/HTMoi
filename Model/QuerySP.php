@@ -254,6 +254,26 @@
             $QueryStatement->closeCursor();
             return $StoreValue;
         }
+
+        public function layTheoTien1Para($tien, $Equal) {
+            $StringQuery = "SELECT * FROM sanphamchitietcuahang WHERE DonGia " . $Equal . " ? ";
+            $QueryStatement = $this->_pdo->prepare($StringQuery);
+            $QueryStatement->bindParam(1, $tien);
+            $QueryStatement->execute();
+            $StoreValue = $QueryStatement->fetchAll();
+            $QueryStatement->closeCursor();
+            return $StoreValue;
+        }
+        public function layTheoTien2Para($Limit, $Upper) {
+            $QueryStatement = $this->_pdo->prepare("SELECT * FROM sanphamchitietcuahang WHERE DonGia BETWEEN ? AND ?");
+            $QueryStatement->bindParam(1, $Limit);
+            $QueryStatement->bindParam(2, $Upper);
+            $QueryStatement->execute();
+            $StoreValue = $QueryStatement->fetchAll();
+            $QueryStatement->closeCursor();
+            return $StoreValue;
+        }
+
     }
 
 

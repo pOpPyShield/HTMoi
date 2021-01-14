@@ -1,3 +1,4 @@
+
 <?php include_once 'Head.php'; ?>
 <?php include_once 'Header.php'; ?>
 
@@ -46,7 +47,7 @@
                 <div class="product-option__price">
                     <h4 class="product-option__price--name">Chọn mức giá</h4>
                     <ul class="product-option-list">
-                    <li class="product-option-group"><a class="product-option-group__link product-option-group__link--price" href="?Action=SearchMucGia&QR=Duoi15">Dưới 15 triệu</a></li>
+                        <li class="product-option-group"><a class="product-option-group__link product-option-group__link--price" href="?Action=SearchMucGia&QR=Duoi15">Dưới 15 triệu</a></li>
                         <li class="product-option-group"><a class="product-option-group__link product-option-group__link--price" href="?Action=SearchMucGia&QR=Tu15Den20">15 - 20 triệu</a></li>
                         <li class="product-option-group"><a class="product-option-group__link product-option-group__link--price" href="?Action=SearchMucGia&QR=Tu20Den25">20 - 25 triệu</a></li>
                         <li class="product-option-group"><a class="product-option-group__link product-option-group__link--price" href="?Action=SearchMucGia&QR=Tu25Den30">25 - 30 triệu</a></li>
@@ -97,21 +98,25 @@
                 <!-----1----->
                 <?php include_once './Model/QuerySP.php';
                 include_once './Model/NoiDungChiTietSP.php';
+                $SearchName = $_POST['search'];
                 $QueryProductPage = new QuerySP();
                 $Rate = new NoiDungChiTiet();
-                $ValueStore = $QueryProductPage->layRaSanPhamRanDom();
-                for ($i = 0; $i < count($ValueStore); $i++) {
-                    $TongSoSao = $Rate->tinhTongSoSaoCuaSanPham($ValueStore[$i]['SPCT_Id'])[0];
-                    $SoNguoiRate = $Rate->demSoCotCuaSPCT($ValueStore[$i]['SPCT_Id'])[0];
-                    $HinhAnh = $QueryProductPage->layRaHinHAnhSPCT($ValueStore[$i]['SPCT_Id']);
+                $KhachHang = new KhachHang();
+                $FindValue = $KhachHang->timKiemSanPham($SearchName);
+                if(count($FindValue) > 0) {
+                    echo "<h2>Tim Kiem duoc " . count($FindValue)." San Pham</h2>";
+                    for ($i = 0; $i < count($FindValue); $i++) {
+                        $TongSoSao = $Rate->tinhTongSoSaoCuaSanPham($FindValue[$i]['SPCT_Id'])[0];
+                        $SoNguoiRate = $Rate->demSoCotCuaSPCT($FindValue[$i]['SPCT_Id'])[0];
+                        $HinhAnh = $QueryProductPage->layRaHinHAnhSPCT($FindValue[$i]['SPCT_Id']);
                 ?>
                     <div class="col-4">
                         <div class="box__img">
-                            <a href="?Action=ChiTietSanPham&Id=<?php echo $ValueStore[$i]['SPCT_Id']; ?>"><img src="/HTMoi/Public/ImageSPCT/<?php echo $HinhAnh['Full']; ?>" class="d-block h-75 w-75" alt="new-product-1"></a>
+                            <a href="?Action=ChiTietSanPham&Id=<?php echo $FindValue[$i]['SPCT_Id']; ?>"><img src="/HTMoi/Public/ImageSPCT/<?php echo $HinhAnh['Full']; ?>" class="d-block h-75 w-75" alt="new-product-1"></a>
                         </div>
                         <div class="box__detail">
                             <div class="box__detail--name">
-                                <a href="?Action=ChiTietSanPham&Id=<?php echo $ValueStore[$i]['SPCT_Id']; ?>" class="font-default"><?php echo $ValueStore[$i]['TenSPCT']; ?></a>
+                                <a href="?Action=ChiTietSanPham&Id=<?php echo $FindValue[$i]['SPCT_Id']; ?>" class="font-default"><?php echo $FindValue[$i]['TenSPCT']; ?></a>
                             </div>
                             <div class="box__detail--start">
                                 <?php if ($SoNguoiRate == 0) {
@@ -129,14 +134,14 @@
                                 <?php } ?>
                             </div>
                             <?php
-                            $KhuyenMai = $QueryProductPage->checkKhuyenMai($ValueStore[$i]['SPCT_Id']);
+                            $KhuyenMai = $QueryProductPage->checkKhuyenMai($FindValue[$i]['SPCT_Id']);
                             $SoKhuyenMai = $QueryProductPage->checkKieuKhuyenMai($KhuyenMai['KhuyenMai_Id']);
                             $PhanTramKhuyenMai1 = $SoKhuyenMai['PhanTramKhuyenMai'] / 100;
 
-                            $DonGiaMoi1 = $ValueStore[$i]['DonGia'] * $PhanTramKhuyenMai1;
+                            $DonGiaMoi1 = $FindValue[$i]['DonGia'] * $PhanTramKhuyenMai1;
                             if (empty($KhuyenMai)) {
                             ?>
-                                <div class="box__detail--price"><?php echo number_format($ValueStore[$i]['DonGia']); ?>đ</div>
+                                <div class="box__detail--price"><?php echo number_format($FindValue[$i]['DonGia']); ?>đ</div>
                             <?php
                             } else {
                             ?>
@@ -149,7 +154,9 @@
                     <!-----1----->
                 <?php
                 }
-
+            } else {
+                echo "<h2>Khong tim thay san pham nao</h2>";
+            }
                 ?>
 
 

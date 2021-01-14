@@ -66,12 +66,14 @@
         ?>
         <li class="header-content__group">
             <div class="header-search">
+            <form action="?Action=TimKiemSanPham" method="post">
                 <div class="header-search__item">
-                    <input type="search" class="header-search__item--input" placeholder="Tìm kiếm ...">
+                    <input type="text" name="search" class="header-search__item--input" placeholder="Tìm kiếm ...">
                 </div>
                 <div class="header-search__item">
-                    <i class="fas fa-search  header-search__item--icon"></i>
+                    <button type="submit" name="submit-search" ><i class="fas fa-search  header-search__item--icon"></i></button>
                 </div>
+            </form>
         </li>
     </ul>
 </header>

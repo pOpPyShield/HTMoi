@@ -126,7 +126,8 @@
                                 <label for="Address" class="checkout__label"><i class="fa fa-address-caed-o"></i>Địa chỉ giao hàng:</label>
                                 <input type="text" class="checkout__input" id="Address" name="Address" placeholder="452 Nguyễn Tri Phương" required>
                                 <input type="hidden" class="checkout__input" name="UserId" value="<?php echo $_SESSION['KhachHang_Id'] ?>">
-
+                                <button type="submit" value="Buy" class="checkout__btn" name="DoCheckOut">Mua hàng</button>
+        
 
                             </div>
                         </div>
@@ -157,7 +158,7 @@
                 ?>
                 <hr>
                 <p class="checkout__cart--product">Tổng tiền: <span class="checkout__cart--product"><b><?php echo number_format($total); ?>đ</b></span></p>
-                <button type="submit" value="Buy" class="checkout__btn" name="DoCheckOut">Mua hàng</button>
+                
             </div>
         </div>
 

@@ -231,7 +231,7 @@
                         <div class="col-lg-2">
                             <div class="box">
                                 <div class="box__img">
-                                    <a href="?Action=ChiTietSanPham&Id=<?php echo $StoreSanPhamTuongTu[$i]['SPCT_Id'];?>"><img src="/HTTzz/Public/ImageSPCT/<?php echo $LayRaHinhAnh['Full'];?>" class="d-block w-100" alt="new-product-1"></a>
+                                    <a href="?Action=ChiTietSanPham&Id=<?php echo $StoreSanPhamTuongTu[$i]['SPCT_Id'];?>"><img src="/HTMoi/Public/ImageSPCT/<?php echo $LayRaHinhAnh['Full'];?>" class="d-block w-100" alt="new-product-1"></a>
                                 </div>
                                 <div class="box__detail">
                                     <div class="box__detail--name">

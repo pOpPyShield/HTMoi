@@ -1,0 +1,28 @@
+.success {
+    position: relative;
+    width: 100%;
+    &__img {
+        width: 50%;
+        transform: translateX(65%);
+    }
+    &__text {
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: .5rem;
+        margin-top: -5rem;
+    }
+    &-box {
+        width: 100%;
+        text-align: center;
+        &__thks {
+            font-size: 1.6rem;
+        }
+        &__home {
+            text-decoration: none !important;
+            font-size: 1.4rem;
+            & i {
+                padding-right: .5rem;
+            }
+        }
+    }
+}

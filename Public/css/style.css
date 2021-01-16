@@ -1006,7 +1006,8 @@ body {
     padding: .5rem;
     background-color: #5a73fc;
     border-radius: 1rem;
-    transition: all .2s; }
+    transition: all .2s;
+    margin-top: 2rem; }
     .checkout__btn:hover {
       box-shadow: 0 0.8rem 3rem rgba(0, 0, 0, 0.15);
       transform: translateY(-3px); }
@@ -1050,4 +1051,24 @@ body {
       .checkout__input:focus:invalid {
         border: 1px solid #2534f7; }
 
-        
+.success {
+  position: relative;
+  width: 100%; }
+  .success__img {
+    width: 50%;
+    transform: translateX(65%); }
+  .success__text {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    margin-top: -5rem; }
+  .success-box {
+    width: 100%;
+    text-align: center; }
+    .success-box__thks {
+      font-size: 1.6rem; }
+    .success-box__home {
+      text-decoration: none !important;
+      font-size: 1.4rem; }
+      .success-box__home i {
+        padding-right: .5rem; }
